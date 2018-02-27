@@ -15,7 +15,8 @@
   {
     private void InitDate(string marker)
     {
-      DateTime? current = string.IsNullOrEmpty(this.Value) ? null : new DateTime?(DateUtil.IsoDateToDateTime(this.Value));
+      DateTime defaultValue = (DateTime.Now >= EndDate) ? StartDate : DateTime.Now;
+      DateTime? current = string.IsNullOrEmpty(this.Value) ? defaultValue : new DateTime?(DateUtil.IsoDateToDateTime(this.Value));
       char ch = marker.ToLower()[0];
       switch (ch)
       {

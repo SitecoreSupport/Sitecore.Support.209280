@@ -1,6 +1,6 @@
 ﻿@using Sitecore.Forms.Mvc
 @using Sitecore.Forms.Mvc.Html
-@model Sitecore.Forms.Mvc.ViewModels.Fields.DateField
+@model Sitecore.Support.Forms.Mvc.ViewModels.Fields.DateField
 
 @using (Html.BeginField())
 {
@@ -35,7 +35,7 @@
     </div>
 
     @Html.RenderScriptBlock(
-        @<script type="text/javascript">
+                @<script type="text/javascript">
         if (typeof window.WffmFieldsData === 'undefined') {
             window.WffmFieldsData = {}
         }
@@ -46,5 +46,5 @@
             monthId: "@Html.Id("Month")",
             yearId: "@Html.Id("Year")"
         };
-        </script>)
+                </script>)
 }

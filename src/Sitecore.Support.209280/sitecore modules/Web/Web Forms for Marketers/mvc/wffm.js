@@ -459,11 +459,11 @@
       var month = $scw("#" + this.options.monthId);
       var year = $scw("#" + this.options.yearId);
 
-      if (month && $scw(month).val()) {
-        if ($scw(day).find('option').length > 0 && $scw(year).find('option').length > 0) {
+      //if (month && $scw(month).val()) {
+        //if ($scw(day).find('option').length > 0 && $scw(year).find('option').length > 0) {
           var days = this.getDays(month.val(), year.val());
 
-          if ($scw(day).find('option').length + 1 != days) {
+          //if ($scw(day).find('option').length + 1 != days) {
 
             var selectedIndex = $scw(day)[0].selectedIndex;
 
@@ -475,9 +475,9 @@
             }
 
             $scw(day).prop("selectedIndex", selectedIndex > count - 1 ? -1 : selectedIndex);
-          }
-        }
-      }
+         //}
+       //}
+      //}
 
       this.updateIsoDate(targetHiddenElementId);
     },
