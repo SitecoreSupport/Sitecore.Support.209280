@@ -73,6 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="sitecore modules\Web\Web Forms for Marketers\mvc\wffm.js" />
+    <Content Include="sitecore modules\Web\Web Forms for Marketers\mvc\wffm.min.js" />
+    <Content Include="Views\Form\EditorTemplates\DateField.cshtml" />
     <None Include="web.config" />
   </ItemGroup>
   <PropertyGroup>
